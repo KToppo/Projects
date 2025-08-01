@@ -7,9 +7,9 @@ import requests
 headers = {
     "User-Agent": "Mozilla/5.0",
     "accept": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMTE1MTdlZDNiZDJkODNjYWZlMTFhYjg4ZDZhMzYxOCIsIm5iZiI6MTc1Mjc2NjYzMi40ODUsInN1YiI6IjY4NzkxOGE4NGVmNTM1MDFiNjNkYjZiMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.YPFCMiqy2MwuJSQCFRM8kGxeqN9El2C4Fo1qtW7BP48"
+    "Authorization": None
 }
-API_KEY = 'a11517ed3bd2d83cafe11ab88d6a3618'
+API_KEY = None
 
 
 movies_dict = pickle.load(open('movie_list.pkl', 'rb'))
