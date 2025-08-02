@@ -3,3 +3,5 @@ movie_recommendation_system/creds.txt
 movie_recommendation_system/myenv
 movie_recommendation_system/movie_list.pkl
 movie_recommendation_system/similarity.pkl
+movie_recommendation_system/.ipynb_checkpoints
+movie_recommendation_system/nohup.out
