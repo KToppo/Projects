@@ -1,5 +1,4 @@
 github_auth.txt
-.gitignore
 movie_recommendation_system/creds.txt
 movie_recommendation_system/myenv
 movie_recommendation_system/movie_list.pkl
@@ -8,4 +7,5 @@ movie_recommendation_system/.ipynb_checkpoints
 movie_recommendation_system/nohup.out
 book_recomendation_system/top50books.pkl
 book_recomendation_system/user_matrix.pkl
+book_recomendation_system/similarity.pkl
 
