@@ -8,4 +8,9 @@ movie_recommendation_system/nohup.out
 book_recomendation_system/top50books.pkl
 book_recomendation_system/user_matrix.pkl
 book_recomendation_system/similarity.pkl
+book_recomendation_system/myenv
+book_recomendation_system/nohup.out
+book_recomendation_system/book_poster.pkl
+book_recomendation_system/__pycache__
+book_recomendation_system/Assets
 

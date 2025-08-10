@@ -10,6 +10,8 @@ top50 = pd.DataFrame(top50)
 matrix = pickle.load(open('user_matrix.pkl', 'rb'))
 matrix = pd.DataFrame(matrix)
 
+book_poster = pickle.load(open('book_poster.pkl', 'rb'))
+book_poster = pd.DataFrame(book_poster)
 
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
@@ -19,9 +21,11 @@ def recommend(book_name):
     similar_items = sorted(list(enumerate(distances)),key=lambda x:x[1], reverse=True)
 
     recommended_book = []
+    recommended_poster = []
     for i in similar_items[1:6]:
         recommended_book.append(matrix.index[i[0]])
-    return recommended_book
+        recommended_poster.append(book_poster[book_poster['Book-Title'] == matrix.index[i[0]]]['Image-URL-M'].values[0])
+    return recommended_book, recommended_poster
 
 def main():
     left, right = st.columns(2)
@@ -54,9 +58,12 @@ def main():
                         )
         if st.button("Recommend"):
             # st.text(selected_book_name)
-            recommended = recommend(selected_book_name)
-            for i in recommended:
-                st.text(i)
+            recommends, posters = recommend(selected_book_name)
+            cols = st.columns(len(recommends))
+            for col, recommended, poster in zip(cols, recommends, posters):
+                with col:
+                    st.text(recommended)
+                    st.image(poster)
     pass
 
 
