@@ -13,4 +13,8 @@ book_recomendation_system/nohup.out
 book_recomendation_system/book_poster.pkl
 book_recomendation_system/__pycache__
 book_recomendation_system/Assets
-
+spam_classifier/Assets
+spam_classifier/.ipynb_checkpoints
+spam_classifier/myenv
+spam_classifier/nohup.out
+spam_classifier/__pycache__
